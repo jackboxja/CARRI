@@ -1,0 +1,168 @@
+<!-- DECLARACIÓN DEL DOCUMENTO: indica que se utiliza HTML5. -->
+<!doctype html>
+<!-- DOCUMENTO HTML: contiene toda la estructura de esta página. lang="es" indica que el contenido está en español. -->
+<html lang="es">
+<!-- CABECERA: contiene configuración, metadatos, fuentes y hojas de estilo; normalmente no se muestra en la página. -->
+<head>
+  <meta charset="utf-8"><!-- Define la codificación de caracteres.Permite que el navegador muestre correctamente letras como á, é, í, ñ, etc.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--acomoda a la página para lo que necesite-->
+  <title>Contacto | CARRI | CARRI</title>
+  <meta name="description" content="Contactá a CARRI para consultar por autos importados, disponibilidad y propuestas de alta gama.">
+ 
+  <meta name="author" content="CARRI">
+  <meta property="og:title" content="Contacto | CARRI | CARRI">
+  <meta property="og:description" content="Contactá a CARRI para consultar por autos importados, disponibilidad y propuestas de alta gama.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CARRI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- CUERPO DE LA PÁGINA: desde aquí comienza el contenido visible para el usuario. -->
+<body>
+<!-- ENCABEZADO: agrupa contenido introductorio o de navegación de la página. -->
+<header>
+<!-- NAVEGACIÓN: contiene los enlaces que permiten desplazarse entre las páginas/secciones del sitio. -->
+<nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top" aria-label="Navegación principal">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" aria-label="CARRI inicio">
+      <img src="assets/logo-principal.png" alt="Logo principal dorado de CARRI">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link " href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link " href="tienda.html">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link " href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<!-- CONTENIDO PRINCIPAL: agrupa el contenido central y único de esta página. -->
+<main>
+
+<!-- SECCIÓN: bloque semántico que agrupa contenido relacionado. -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Contacto</span>
+    <h1 class="section-title mt-2">Hablemos del próximo auto.</h1>
+    <p class="muted col-lg-7 mb-0">Completá el formulario para realizar una consulta.</p>
+  </div>
+</section>
+<!-- SECCIÓN: bloque semántico que agrupa contenido relacionado. -->
+<section class="section-pad" aria-labelledby="form-title">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="contact-card">
+          <h2 id="form-title" class="h2 mb-4">Formulario de consulta</h2>
+<!-- FORMULARIO: agrupa campos que el usuario puede completar y enviar. -->
+          <form action="#" method="post">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="nombre">Nombre completo</label>
+                <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="email">Correo electrónico</label>
+                <input class="form-control" id="email" name="email" type="email" placeholder="nombre@correo.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="telefono">Teléfono</label>
+                <input class="form-control" id="telefono" name="telefono" type="tel" placeholder="+54 9 ..." required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="modelo">Modelo de interés</label>
+                <select class="form-select" id="modelo" name="modelo" required>
+                  <option value="" selected disabled>Seleccioná una opción</option>
+                  <option>Ferrari 488</option>
+                  <option>Lamborghini Aventador</option>
+                  <option>McLaren 720S</option>
+                  <option>Bugatti Chiron</option>
+                  <option>Pagani Huayra</option>
+                  <option>Otro modelo</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="presupuesto">Presupuesto estimado</label>
+                <select class="form-select" id="presupuesto" name="presupuesto" required>
+                  <option value="" selected disabled>Seleccioná un rango</option>
+                  <option>Consultar</option>
+                  <option>Hasta USD 500.000</option>
+                  <option>USD 500.000 – 1.000.000</option>
+                  <option>Más de USD 1.000.000</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="6" placeholder="Contanos qué vehículo estás buscando..." required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" id="acepto" name="acepto" type="checkbox" required>
+                  <label class="form-check-label muted" for="acepto">Confirmo que los datos ingresados son correctos.</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-gold btn-lg w-100" type="submit">Enviar consulta</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <aside class="col-lg-5" aria-label="Información de soporte">
+        <div class="contact-card h-100">
+          <span class="eyebrow">Soporte</span>
+          <h2 class="h2 mt-2">Encontranos</h2>
+          <p class="muted">Canales de contacto de ejemplo para completar con los datos reales del emprendimiento.</p>
+          <a class="support-link" href="mailto:jarri@escuelasproa.edu.ar"><span>Correo</span><strong>jarri@escuelasproa.edu.ar</strong></a>
+          <a class="support-link" href="tel:3564641877"><span>Teléfono</span><strong>3564641877</strong></a>
+          <a class="support-link" href="https://www.google.com/maps/place/Las+Guayanas+533,+San+Francisco,+C%C3%B3rdoba/@-31.4316479,-62.1086016,17z/data=!3m1!4b1!4m5!3m4!1s0x95cb2869ddd8022f:0xf8e9af29f5d25935!8m2!3d-31.4316525!4d-62.1060267?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener"><span>Ubicación</span><strong>San Francisco, Córdoba, Argentina ↗</strong></a>
+          <a class="support-link" href="https://www.instagram.com/carri" target="_blank" rel="noopener"><span>Instagram</span><strong>CARRI</strong></a>
+          <div class="mt-4 p-3 rounded-3 border border-secondary">
+            <p class="mb-2"><strong>Horario de atención</strong></p>
+            <ul class="muted mb-0">
+              <li>Lunes a viernes: 9:00 – 18:00</li>
+              <li>Sábados: 10:00 – 14:00</li>
+              <li>Domingos y feriados: cerrado</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- PIE DE PÁGINA: información y enlaces que aparecen al final del sitio. -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-4">
+        <img class="footer-logo" src="assets/logo-secundario.png" alt="Logo secundario plateado de CARRI">
+        <p class="muted mt-3 mb-0">SI NACISTE PARA SOBRESALIR,COMPRÁ EN CARRI.</p>
+      </div>
+      <div class="col-lg-8">
+        <ul class="footer-nav justify-content-lg-end">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <p class="text-lg-end muted small mb-0">© <span id="current-year"></span> CARRI. Proyecto educativo.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JAVASCRIPT: código que añade comportamiento/interactividad al documento. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

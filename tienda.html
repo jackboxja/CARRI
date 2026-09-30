@@ -1,0 +1,152 @@
+<!-- DECLARACIÓN DEL DOCUMENTO: indica que se utiliza HTML5. -->
+<!doctype html>
+<!-- DOCUMENTO HTML: contiene toda la estructura de esta página. lang="es" indica que el contenido está en español. -->
+<html lang="es">
+<!-- CABECERA: contiene configuración, metadatos, fuentes y hojas de estilo; normalmente no se muestra en la página. -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda de autos importados | CARRI</title>
+  <meta name="description" content="Catálogo CARRI de autos importados de alta gama con filtros por categorías.">
+ 
+  <meta name="author" content="CARRI">
+  <meta property="og:title" content="Tienda de autos importados | CARRI">
+  <meta property="og:description" content="Catálogo CARRI de autos importados de alta gama con filtros por categorías.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CARRI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- CUERPO DE LA PÁGINA: desde aquí comienza el contenido visible para el usuario. -->
+<body>
+<!-- ENCABEZADO: agrupa contenido introductorio o de navegación de la página. -->
+<header>
+<!-- NAVEGACIÓN: contiene los enlaces que permiten desplazarse entre las páginas/secciones del sitio. -->
+<nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top" aria-label="Navegación principal">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" aria-label="CARRI inicio">
+      <img src="assets/logo-principal.png" alt="Logo principal dorado de CARRI">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link " href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tienda.html">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link " href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link " href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<!-- CONTENIDO PRINCIPAL: agrupa el contenido central y único de esta página. -->
+<main>
+
+<!-- SECCIÓN: bloque semántico que agrupa contenido relacionado. -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Tienda</span>
+    <h1 class="section-title mt-2 mb-3">Catálogo CARRI</h1>
+    <p class="muted col-lg-8 mb-0">Explorá nuestra selección de autos destacados.</p>
+  </div>
+</section>
+<!-- SECCIÓN: bloque semántico que agrupa contenido relacionado. -->
+<section class="section-pad" aria-labelledby="catalogo-title">
+  <div class="container">
+    <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mb-4">
+      <h2 id="catalogo-title" class="h3 mb-0">Vehículos destacados</h2>
+      <div class="filter-bar" role="group" aria-label="Filtros del catálogo">
+      </div>
+    </div>
+    <div class="product-grid">
+      
+<article class="luxury-card product-item" data-category="superdeportivos">
+  <img class="car-image" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ferrari%20488%20%2824340066457%29.jpg" alt="Ferrari 488, vehículo de alta gama">
+  <div class="card-body d-flex flex-column">
+    <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="badge badge-gold">Superdeportivo</span><span class="price">Consultar</span></div>
+    <h2 class="h4">Ferrari 488</h2>
+    <p class="muted">Vehículo destacado dentro de la propuesta de autos importados de CARRI.</p>
+    <a href="contacto.html?modelo=Ferrari%20488" class="btn btn-outline-gold mt-auto">Consultar disponibilidad</a>
+  </div>
+</article>
+<article class="luxury-card product-item" data-category="superdeportivos hiperautos">
+  <img class="car-image" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lamborghini%20Aventador.jpg" alt="Lamborghini Aventador, vehículo de alta gama">
+  <div class="card-body d-flex flex-column">
+    <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="badge badge-gold">Superdeportivo</span><span class="price">Consultar</span></div>
+    <h2 class="h4">Lamborghini Aventador</h2>
+    <p class="muted">Vehículo destacado dentro de la propuesta de autos importados de CARRI.</p>
+    <a href="contacto.html?modelo=Lamborghini%20Aventador" class="btn btn-outline-gold mt-auto">Consultar disponibilidad</a>
+  </div>
+</article>
+<article class="luxury-card product-item" data-category="superdeportivos">
+  <img class="car-image" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/McLaren%20720S.jpg" alt="McLaren 720S, vehículo de alta gama">
+  <div class="card-body d-flex flex-column">
+    <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="badge badge-gold">Superdeportivo</span><span class="price">Consultar</span></div>
+    <h2 class="h4">McLaren 720S</h2>
+    <p class="muted">Vehículo destacado dentro de la propuesta de autos importados de CARRI.</p>
+    <a href="contacto.html?modelo=McLaren%20720S" class="btn btn-outline-gold mt-auto">Consultar disponibilidad</a>
+  </div>
+</article>
+<article class="luxury-card product-item" data-category="hiperautos">
+  <img class="car-image" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20Bugatti%20Chiron.jpg" alt="Bugatti Chiron, vehículo de alta gama">
+  <div class="card-body d-flex flex-column">
+    <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="badge badge-gold">Hiperauto</span><span class="price">Consultar</span></div>
+    <h2 class="h4">Bugatti Chiron</h2>
+    <p class="muted">Vehículo destacado dentro de la propuesta de autos importados de CARRI.</p>
+    <a href="contacto.html?modelo=Bugatti%20Chiron" class="btn btn-outline-gold mt-auto">Consultar disponibilidad</a>
+  </div>
+</article>
+<article class="luxury-card product-item" data-category="hiperautos">
+  <img class="car-image" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pagani%20Huayra.jpg" alt="Pagani Huayra, vehículo de alta gama">
+  <div class="card-body d-flex flex-column">
+    <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="badge badge-gold">Hiperauto</span><span class="price">Consultar</span></div>
+    <h2 class="h4">Pagani Huayra</h2>
+    <p class="muted">Vehículo destacado dentro de la propuesta de autos importados de CARRI.</p>
+    <a href="contacto.html?modelo=Pagani%20Huayra" class="btn btn-outline-gold mt-auto">Consultar disponibilidad</a>
+  </div>
+</article>
+<article class="luxury-card product-item" data-category="coleccion">
+  <img class="car-image" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ferrari%20488%20%2824340066457%29.jpg" alt="Selección CARRI, vehículo de alta gama">
+  <div class="card-body d-flex flex-column">
+    <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="badge badge-gold">Selección especial</span><span class="price">A pedido</span></div>
+    <h2 class="h4">Ferrari F8 Tributo</h2>
+    <p class="muted">Vehículo destacado dentro de la propuesta de autos importados de CARRI.</p>
+    <a href="contacto.html?modelo=Selección%20CARRI" class="btn btn-outline-gold mt-auto">Consultar disponibilidad</a>
+  </div>
+</article>
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- PIE DE PÁGINA: información y enlaces que aparecen al final del sitio. -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-4">
+        <img class="footer-logo" src="assets/logo-secundario.png" alt="Logo secundario plateado de CARRI">
+        <p class="muted mt-3 mb-0">SI NACISTE PARA SOBRESALIR,COMPRÁ EN CARRI.</p>
+      </div>
+      <div class="col-lg-8">
+        <ul class="footer-nav justify-content-lg-end">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <p class="text-lg-end muted small mb-0">© <span id="current-year"></span> CARRI. Proyecto educativo.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JAVASCRIPT: código que añade comportamiento/interactividad al documento. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
